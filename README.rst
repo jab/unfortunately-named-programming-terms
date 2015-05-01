@@ -1,9 +1,24 @@
 Unfortunately-Named Programming Terms
 =====================================
 
-Because programming would be hard enough if we had good names for things. [#]_
+Because programming would be hard enough if we had good names for things.
+I mean seriously.
+For an activity that requires such relentless, fastidious precision of its practitioners,
+it's miraculous we can even communicate at all.
 
-Pull requests welcome!!!
+If you've ever tried teaching programming to beginners, maybe you've noticed.
+Or maybe this is the first time you're deliberately considering
+how overloaded our terms of art are,
+and are maybe surprised by what you find.
+
+Either way, welcome!
+
+Hope you find this interesting,
+and please feel welcome to contribute.
+
+*Note: documentating != proposing replacement*
+
+Without further ado:
 
 +------------+-------------------------------------------+-------------------------------------------------+
 | term       | meanings                                  | issues                                          |
@@ -11,9 +26,12 @@ Pull requests welcome!!!
 | key        | 1. unique value allowing efficient lookup | - overloaded, difficult to google               |
 |            |    of associated values (e.g. in a map,   | - the metaphor works for symmetric key crypto   |
 |            |    datastore, etc.)                       |   ("only those with the key can lock/unlock     |
-|            | 2. a secret value used for                |   access") but only causes confusion for public |
-|            |    encryption/decryption/authentication   |   key crypto ("I give a key out to everyone?")  |
-|            | 3. a public value used for encryption and |                                                 |
+|            | 2. (non-unique) attribute of data in a    |   access") but only causes confusion for public |
+|            |    collection by which it can be ordered, |   key crypto ("I give my key out to everyone?") |
+|            |    grouped, etc.                          |                                                 |
+|            | 3. a secret value used for                |                                                 |
+|            |    encryption/decryption/authentication   |                                                 |
+|            | 4. a public value used for encryption and |                                                 |
 |            |    authentication                         |                                                 |
 +------------+-------------------------------------------+-------------------------------------------------+
 | value      | 1. the value that a key (e.g. in a map)   | - overloaded, difficult to google               |
@@ -30,6 +48,3 @@ Pull requests welcome!!!
 |            | 2. a data structure associating keys with |                                                 |
 |            |    values                                 |                                                 |
 +------------+-------------------------------------------+-------------------------------------------------+
-
-.. [#] I mean seriously. For an activity that requires such relentless, fastidious precision of its practitioners,
-   it's miraculous we can even communicate at all.
