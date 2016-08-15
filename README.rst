@@ -53,3 +53,8 @@ Without further ado:
 +------------+-------------------------------------------+-------------------------------------------------+
 | object     |                                           |                                                 |
 +------------+-------------------------------------------+-------------------------------------------------+
+| heap       | 1. a pool of memory managed by an         | - overloaded, difficult to google because a     |
+|            |    allocator                              |   heap-tree is typically allocated on the heap, |
+|            | 2. a type of tree-based data structure    |   and a memory heap is itself implemented with  |
+|            |                                           |   some sort of a data structure                 |
++------------+-------------------------------------------+-------------------------------------------------+
