@@ -58,3 +58,17 @@ Without further ado:
 |            | 2. a type of tree-based data structure    |   and a memory heap is itself implemented with  |
 |            |                                           |   some sort of a data structure                 |
 +------------+-------------------------------------------+-------------------------------------------------+
+| constant   | 1. a hard-coded value or 'magic number'.  | - if you have a 'constant', it would be         |
+|            |    typically a literal expression.        |   reasonable to assume that its value will      |
+|            |    possibly even a value computed at      |   remain constant, rather than being            |
+|            |    compile-time ('constexpr')             |   inadvertently modified by some other piece of |
+|            | 2. an attribute of an access path to a    |   code which holds a mutable reference to the   |
+|            |    value, through which the value cannot  |   data.                                         |
+|            |    be modified. However the value itself  |                                                 |
+|            |    might be mutable                       |   ambiguous synonyms:                           |
+|            |                                           |   - immutable (D, transitive)                   |
+|            |                                           |   - persistent (Clojure, intransitive)          |
+|            |                                           |   - final (Java, intransitive)                  |
+|            |                                           |   - frozen (JavaScript, intransitive)           |
+|            |                                           |   - readonly (C#, intransitive)                 |
++------------+-------------------------------------------+-------------------------------------------------+
