@@ -59,13 +59,13 @@ Without further ado:
 |            |                                           |   some sort of a data structure                 |
 +------------+-------------------------------------------+-------------------------------------------------+
 | constant   | 1. a hard-coded value or 'magic number'.  | - if you have a 'constant', it would be         |
-|            |    Typically a literal expression         |   reasonable to assume that its value will      |
-|            | 2. an attribute of an access path to a    |   remain constant, rather than being            |
-|            |    value, through which the value cannot  |   inadvertently modified by some other piece of |
-|            |    be modified. However the value itself  |   code which holds a mutable reference to the   |
-|            |    might be mutable                       |   data.                                         |
-|            |                                           |                                                 |
-|            |                                           |   ambiguous synonyms:                           |
+|            |    typically a literal expression.        |   reasonable to assume that its value will      |
+|            |    possibly even a value computed at      |   remain constant, rather than being            |
+|            |    compile-time ('constexpr')             |   inadvertently modified by some other piece of |
+|            | 2. an attribute of an access path to a    |   code which holds a mutable reference to the   |
+|            |    value, through which the value cannot  |   data.                                         |
+|            |    be modified. However the value itself  |                                                 |
+|            |    might be mutable                       |   ambiguous synonyms:                           |
 |            |                                           |   - immutable (D, transitive)                   |
 |            |                                           |   - persistent (Clojure, intransitive)          |
 |            |                                           |   - final (Java, intransitive)                  |
